@@ -16,6 +16,8 @@ import 'package:flutter_full_learn/101/page_view_learn.dart';
 import 'package:flutter_full_learn/101/stateful_learn.dart';
 import 'package:flutter_full_learn/101/stateful_life_cycle_learn.dart';
 import 'package:flutter_full_learn/101/text_field_learn.dart';
+import 'package:flutter_full_learn/202/model_learn_view.dart';
+import 'package:flutter_full_learn/202/tab_learn.dart';
 import 'package:flutter_full_learn/demos/color_demos_view.dart';
 import 'package:flutter_full_learn/demos/color_life_cycle_view.dart';
 import 'package:flutter_full_learn/demos/my_collections_demo.dart';
@@ -40,6 +42,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          bottomAppBarTheme: const BottomAppBarTheme(shape: CircularNotchedRectangle()),
+          tabBarTheme: const TabBarTheme(
+              indicatorSize: TabBarIndicatorSize.label, labelColor: Colors.green, unselectedLabelColor: Colors.red),
           listTileTheme: ListTileThemeData(contentPadding: EdgeInsets.zero),
           cardTheme: CardTheme(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
           appBarTheme: const AppBarTheme(
@@ -47,7 +52,7 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.transparent,
               elevation: 0,
               systemOverlayStyle: SystemUiOverlayStyle.light)),
-      home: NavigationLearnView(),
+      home: ModelLearnView(),
     );
   }
 }
