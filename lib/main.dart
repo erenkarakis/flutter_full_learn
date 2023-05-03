@@ -17,6 +17,7 @@ import 'package:flutter_full_learn/101/stateful_learn.dart';
 import 'package:flutter_full_learn/101/stateful_life_cycle_learn.dart';
 import 'package:flutter_full_learn/101/text_field_learn.dart';
 import 'package:flutter_full_learn/202/model_learn_view.dart';
+import 'package:flutter_full_learn/202/service/service_learn_view.dart';
 import 'package:flutter_full_learn/202/tab_learn.dart';
 import 'package:flutter_full_learn/demos/color_demos_view.dart';
 import 'package:flutter_full_learn/demos/color_life_cycle_view.dart';
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.transparent,
               elevation: 0,
               systemOverlayStyle: SystemUiOverlayStyle.light)),
-      home: ModelLearnView(),
+      home: ServiceLearn(),
     );
   }
 }
